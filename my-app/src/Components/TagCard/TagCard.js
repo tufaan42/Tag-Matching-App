@@ -29,7 +29,7 @@ const TagCard = (props) => {
             <h1>{props.myText}</h1>
             <Tags props = {props}/>
             <div className ="button-align">
-            <button className = 'btn btn-outline-success' onClick = {subHandler}>Submit</button>
+            <button className = 'btn btn-outline-success' onClick = {subHandler}>Add Activity</button>
             <button className = 'btn btn-outline-success' onClick = {addtagHandler}>Add Tag</button>
             </div>
         </div>

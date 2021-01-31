@@ -1,24 +1,13 @@
-import Row from "./Row"
+import RenderActivities from "../../../RenderFuntions/Table/RenderActivities";
 import Thead from "./Thade"
 
 const Table = (props) => {
-
-    const RenderActivities = () => {
-        const rowRender = (element,index) => {
-            return (<Row key = {index} index = {index+1} date = {element.date} text = {element.text}
-             tags = {element.tags}/>)
-        }
-        return props.activities.map((element,index)=>{
-            return rowRender(element,index);
-        });
-    }
-
     return (
         <div className = "table-space">
             <table className= "table table-hover">
                 <Thead/>
                 <tbody>
-                    {RenderActivities()}
+                    {RenderActivities(props)}
                 </tbody>
             </table>
         </div>
