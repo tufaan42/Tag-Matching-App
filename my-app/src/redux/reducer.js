@@ -8,9 +8,10 @@ const initialState = {
 
 const reducer = (state = initialState, action)=>{
     if(action.type === actionType.ADD_TAG ){
+        const newtags = state.tags.concat(action.tags);
         return {
             ...state,
-            tags: [...state.tags,action.tags]
+            tags: newtags,
         }
     } else if( action.type === actionType.INIT_COUNTRIES){
         return {

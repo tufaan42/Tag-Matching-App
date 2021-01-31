@@ -9,7 +9,6 @@ import { postActivity } from '../../Utility/fetchs';
 
 
 const TagCard = (props) => {
-
     const subHandler = (e) => {
         postActivity(props);
         props.changeFlag(3);
@@ -21,8 +20,6 @@ const TagCard = (props) => {
         props.changeFlag(0);
         props.tagReset();
     }
-    
-
     return (
         <div className = 'card'>
             <BackButton backHandler = {backHandler}/>
