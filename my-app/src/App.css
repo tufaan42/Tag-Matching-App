@@ -1,0 +1,166 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/geometry.png);
+}
+
+.form1{
+  display: flex;
+  justify-content: center;
+  box-shadow: 3px 3px 5px #ccc;
+  width: 60vw;
+  height: 50vh;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  padding: 5vh 5vw;
+  color: rgb(5, 98, 75);
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+}
+
+.form1 label{
+  align-self: center;
+  text-shadow: 1px #1c021f, 1px #b6e7ee;
+  font-size: x-large;
+  padding: 5px 5px;
+}
+
+.texta{
+  border-color: rgb(5, 98, 75);
+  font-size: x-large;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.card{
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 3px 3px 5px #ccc;
+  width: 60vw;
+  height: fit-content;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  padding: 8vh 5vw;
+  color: rgb(5, 98, 75);
+  opacity: 1;
+  background-color: rgb(255, 255, 255);
+}
+
+.card label{
+  text-shadow: 1px #1c021f, 1px #b6e7ee;
+  font-size: large;
+  color: #1c021f;
+  font-weight: bolder;
+  padding: 2px 2px;
+}
+
+.card2{
+  text-align: center;
+  box-shadow: 2px 2px 4px #586262;
+  border-radius: 100px;
+  margin: 1px 3px;
+  padding: 5px 10px; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.0em;
+  color: #fff;
+  opacity: 1;
+  background-color: #7c7c7c;
+}
+
+.card2:first-child{
+  margin-left: 0px;
+}
+
+.tag-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-align{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.top-bar{
+  display: flex;
+  align-items: center;
+}
+
+
+.btn-outline-danger{
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.activity-button{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.btn-outline-light{
+  border-radius: 40%;
+  padding: 5px;
+}
+
+.btn-outline-light:hover{
+  background-color: rgb(0, 255, 85);
+}
+
+.dropdown-header{
+  left: 0px;
+  margin-top: 5px;
+  font-size: large;
+}
+
+
+.form-control{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-btn{
+  width: 30%;
+  align-self: center;
+}
+
+.add-tag{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.tag-select{
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.single-tag{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-space{
+  margin-top: 20px;
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.table-row{
+  text-align: center;
+}
