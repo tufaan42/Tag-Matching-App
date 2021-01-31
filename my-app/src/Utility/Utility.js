@@ -1,8 +1,3 @@
-export const TagComponent = (element,index)=>{
-    return (<div key={index} className="card2">
-        {element}
-    </div>);
-}
 
 
 let chk = (char) =>{

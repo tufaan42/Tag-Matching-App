@@ -1,4 +1,4 @@
-import renderTags from "../../RenderFuntions/TagCards/RenderTags"
+import renderTags from "../RenderTags/RenderTags"
 
 
 const Tags = (props)=>{

@@ -6,7 +6,6 @@ const ActivityAddedModal = (props) => {
     getActivities(props.addActivities);
     const newActivityHandler = () => {
         props.changeFlag(0);
-        props.tagReset();
     }
     return (
         <div className = 'card'>
@@ -19,7 +18,6 @@ const ActivityAddedModal = (props) => {
 const mapDispatchToProps = dispatch => {
     return {
         changeFlag: flag => dispatch({ type: actionType.CHANGE_FLAG, flag: flag }),
-        tagReset: () => dispatch({type: actionType.RESET_TAG }),
         addActivities: activities => { dispatch({ type: actionType.ADD_ACTIVITIES, activities: activities }) }
     }
 }

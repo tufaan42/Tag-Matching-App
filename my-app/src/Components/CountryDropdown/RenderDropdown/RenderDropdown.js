@@ -1,5 +1,5 @@
-import * as Utility from '../../Utility/Utility'
-import DropdownComponent from '../../Components/CountryDropdown/DropdownComponent'
+import * as Utility from '../../../Utility/Utility'
+import DropdownComponent from '../DropdownComponent'
 
 const renderDropdown = (props, name) =>{
     const tempCountries = Utility.mkarray(props.countries);

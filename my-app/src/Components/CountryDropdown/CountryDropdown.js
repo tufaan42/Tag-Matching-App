@@ -2,9 +2,9 @@ import React,{ useState } from 'react';
 import '../../App.css';
 import {connect} from 'react-redux';
 import * as actionType from "../../redux/Actions/actionTypes";
-import renderDropdown from '../../RenderFuntions/CountryDropdown/RenderDropdown';
+import renderDropdown from './RenderDropdown/RenderDropdown';
 import BackButton from '../Buttons/BackButton';
-import Tags from '../Tags/Tags';
+import Tags from '../TagCard/Tags/Tags';
 
 
 const CountryDorpdown = (props) => {
@@ -30,9 +30,9 @@ const CountryDorpdown = (props) => {
             onChange = {onChangeHandler} type = "text"/>
             <div className = 'tag-select'>
                 <div className="add-tag">
-                {renderDropdown(props,state.name)}
-             </div>
-        </div>
+                    {renderDropdown(props,state.name)}
+                </div>
+            </div>
         </div>
         
     );

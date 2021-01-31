@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 import '../../App.css';
 
 const Form = (props) => {
+    props.tagReset();
     const [state, setState] = useState({
         id: "",
         value: ""
@@ -41,24 +42,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return{
-        addTag: (tags) => {
-            dispatch({
-                type: actionType.ADD_TAG,
-                tags: tags
-            })
-        },
-        myText: (myText) => {
-            dispatch({
-                type: actionType.ADD_TEXT,
-                myText: myText
-            })
-        },
-        changeFlag: (flag) => {
-            dispatch({
-                type: actionType.CHANGE_FLAG,
-                flag: flag,
-            })
-        }
+        addTag: tags => dispatch({ type: actionType.ADD_TAG, tags: tags }),
+        myText: myText => dispatch({ type: actionType.ADD_TEXT, myText: myText }),
+        changeFlag: flag => dispatch({ type: actionType.CHANGE_FLAG, flag: flag }),
+        tagReset: () => dispatch({type: actionType.RESET_TAG })
     }
 }
 

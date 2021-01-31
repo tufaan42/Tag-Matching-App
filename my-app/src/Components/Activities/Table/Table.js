@@ -1,4 +1,4 @@
-import RenderActivities from "../../../RenderFuntions/Table/RenderActivities";
+import RenderActivities from "../RenderActivities/RenderActivities";
 import Thead from "./Thade"
 
 const Table = (props) => {

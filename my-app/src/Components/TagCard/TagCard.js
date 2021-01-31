@@ -3,7 +3,7 @@ import '../../App.css';
 import {connect} from 'react-redux';
 import * as actionType from "../../redux/Actions/actionTypes";
 import BackButton from '../Buttons/BackButton';
-import Tags from '../Tags/Tags';
+import Tags from './Tags/Tags';
 import { postActivity } from '../../Utility/fetchs';
 
 
@@ -18,7 +18,6 @@ const TagCard = (props) => {
     }
     const backHandler = (e) => {
         props.changeFlag(0);
-        props.tagReset();
     }
     return (
         <div className = 'card'>
@@ -43,7 +42,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         changeFlag: flag => dispatch({ type: actionType.CHANGE_FLAG, flag: flag }),
-        tagReset: () => dispatch({type: actionType.RESET_TAG })
     }
 }
 

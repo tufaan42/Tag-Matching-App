@@ -1,4 +1,4 @@
-import renderTags from "../../../RenderFuntions/TagCards/RenderTags";
+import renderTags from "../../TagCard/RenderTags/RenderTags";
 
 const Row = (props) => {
     return (

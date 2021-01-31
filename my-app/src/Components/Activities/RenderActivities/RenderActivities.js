@@ -1,4 +1,4 @@
-import Row from "../../Components/Activities/Table/Row";
+import Row from "../Table/Row";
 
 const RenderActivities = (props) => {
     const rowRender = (element,index) => {

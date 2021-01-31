@@ -44,6 +44,6 @@ export const postActivity = (props) => {
       headers: { 'Content-Type': 'application/json' }
     })
     .then(res => res.json())
-    .then(resData => console.log(resData.message))
+    .then(resData => {})
     .catch(err => console.log(err));
 }
